@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    <p class="subtitle">Discover real-time weather insights for any location worldwide with our elegant, modern interface</p>
+    <div class="time"></div>
+
+    <div class="input-container">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="getWeather">Get Weather</button>
+    </div>
+  </div>
+
+  <div id="weatherResult" class="weather-result"></div>
+
+  <!-- Load script after DOM -->
+  <script src="script.js"></script>
+</body>
+</html>
