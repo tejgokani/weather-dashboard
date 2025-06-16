@@ -261,3 +261,54 @@
       h1 { font-size: 2.5rem; }
       .container { padding: 1rem; }
     }
+
+     .weather-result {
+      word-wrap: break-word;
+      font-size: 1rem;
+      line-height: 1.5;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    #map, #humidityChart {
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      overflow: hidden;
+      display: block;
+    }
+    
+    canvas#humidityChart {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+    }
+    
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .subtitle {
+        font-size: 0.95rem;
+      }
+      .weather-result {
+        font-size: 1rem;
+        padding: 1.2rem;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .input-container {
+        padding: 1rem 0.5rem;
+      }
+      .weather-result {
+        padding: 1rem;
+      }
+      canvas#humidityChart {
+        padding: 0.5rem;
+      }
+    }
